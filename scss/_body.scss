@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    
+    --rojo: #E50914;
+    --fondo: #141414;
+}
+body {
+    background: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+}

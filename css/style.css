@@ -1,3 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+:root {
+  --rojo: #E50914;
+  --fondo: #141414;
+}
+
+body {
+  background: var(--fondo);
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --rojo: #E50914;
+  --fondo: #141414;
+}
+
+body {
+  background: var(--fondo);
+  font-family: "Open Sans", sans-serif;
+}
+
+.logotipo {
+  font-family: "Bebas Neue", cursive;
+  color: var(--rojo);
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.menu-nav a {
+  color: #aaa;
+}
 
 /*# sourceMappingURL=style.css.map */
