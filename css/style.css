@@ -53,6 +53,11 @@ body {
   align-items: end;
 }
 
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
 @media only screen and (max-width: 578px) {
   .portada {
     font-size: 16px;
@@ -101,6 +106,50 @@ body {
 .boton:hover {
   background: #fff;
   color: #000;
+}
+
+.peliculas-recomendadas {
+  display: none;
+  margin-bottom: 70px;
+}
+
+.contenedor-principal {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.contenedor-titulo-controles {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.flecha-izq, .flecha-der {
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50%);
+  line-height: 40px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+}
+
+.flecha-izq:hover, .flecha-der:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.flecha-izq {
+  left: 0;
+}
+
+.flecha-der {
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

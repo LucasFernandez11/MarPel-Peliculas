@@ -9,6 +9,10 @@
     display: flex;
     align-items: end;
 }
+.navbar {
+    padding: 0;
+    margin: 0;
+}
 @media only screen and (max-width: 578px) {
     .portada {
         font-size: 16px;
