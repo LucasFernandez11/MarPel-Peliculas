@@ -30,7 +30,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.logotipo {
+.img-nav {
+  display: flex;
+  align-items: center;
+}
+.img-nav .logotipo {
   font-family: "Bebas Neue", cursive;
   color: var(--rojo);
   font-weight: normal;
