@@ -1,9 +1,15 @@
 @import 'body';
-.logotipo {
-    font-family: 'Bebas Neue', cursive;
-    color: var(--rojo) ;
-    font-weight: normal;
-    font-size: 50px;
+
+
+.img-nav {
+    display: flex;
+    align-items: center;
+    .logotipo {
+        font-family: 'Bebas Neue', cursive;
+        color: var(--rojo) ;
+        font-weight: normal;
+        font-size: 50px;
+    }
 }
 
 .menu-nav a {
