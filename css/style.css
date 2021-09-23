@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -16,6 +17,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -37,6 +39,68 @@ body {
 
 .menu-nav a {
   color: #aaa;
+}
+
+.portada {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/portada1.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: end;
+}
+
+@media only screen and (max-width: 578px) {
+  .portada {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/portada1.jpg);
+    background-position: 80% 20%;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+  }
+}
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 6.25em;
+}
+
+.portada .titulo-portada {
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+
+.descripcion {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.boton {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.12em;
+}
+
+.boton:hover {
+  background: #fff;
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
