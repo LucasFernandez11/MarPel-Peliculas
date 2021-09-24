@@ -1,16 +1,19 @@
-.peliculas-recomendadas { 
+.peliculas-recomendadas {
     margin-bottom: 70px;
 }
+
 .contenedor-principal {
     display: flex;
     align-items: center;
     position: relative;
 }
-.contenedor-titulo-controles{
+
+.contenedor-titulo-controles {
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
+
 .indicadores button {
     background: #fff;
     height: 3px;
@@ -19,33 +22,43 @@
     border: none;
     margin-right: 2px;
 }
-.indicadores button:hover, .indicadores button.activo{
+
+.indicadores button:hover,
+.indicadores button.activo {
     background-color: red;
 
 }
-.flecha-izq, .flecha-der{
-position: absolute;
-border: none;
-background: rgba(0,0,0, 0.3);
-font-size: 40px;
-height: 50%;
-top: calc(50%);
-line-height: 40px;
-width: 50px;
-color: #fff;
-cursor: pointer;
-z-index: 500;
-transition: .2s ease all;
+
+.flecha-izq,
+.flecha-der {
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+  
+    font-size: 40px;
+    height: 50%;
+    /*top: calc(50%);*/
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
 }
-.flecha-izq:hover, .flecha-der:hover{
-    background: rgba(0,0,0, 0.9);
+
+.flecha-izq:hover,
+.flecha-der:hover {
+    background: rgba(0, 0, 0, 0.9);
 }
+
 .flecha-izq {
-    left: 0;    
+    left: 0;
 }
+
 .flecha-der {
     right: 0;
 }
+
 .titulo-carousel {
     font-size: 30px;
     color: #fff;
@@ -54,19 +67,26 @@ transition: .2s ease all;
 .contenedor-carousel {
     width: 100%;
     padding: 25px 0;
-    overflow: hidden;
+    overflow-x: scroll;
     scroll-behavior: smooth;
 }
+
 .carousel {
     display: flex;
     flex-wrap: nowrap;
 }
+
 .pelicula {
-    width: 20%;
+    min-width: 20%;
     transition: .3s ease all;
-    box-shadow: 5px 5px 10px rgba(0,0,0, 0.3);
-    }
-    .pelicula img {
-        width: 100%;
-        vertical-align: top;
-    }
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pelicula img {
+    width: 100%;
+    vertical-align: top;
+}
+.pelicula.hover {
+    transform-origin: center;
+    transform: scale(1.2);
+}

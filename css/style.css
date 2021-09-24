@@ -62,19 +62,6 @@ body {
   margin: 0;
 }
 
-@media only screen and (max-width: 578px) {
-  .portada {
-    font-size: 16px;
-    min-height: 40.62em;
-    color: #fff;
-    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/portada1.jpg);
-    background-position: 80% 20%;
-    background-size: cover;
-    margin-bottom: 3.12em;
-    display: flex;
-    align-items: end;
-  }
-}
 .contenedor {
   width: 90%;
   margin: 0 auto;
@@ -137,17 +124,19 @@ body {
   margin-right: 2px;
 }
 
-.indicadores button:hover, .indicadores button.activo {
+.indicadores button:hover,
+.indicadores button.activo {
   background-color: red;
 }
 
-.flecha-izq, .flecha-der {
+.flecha-izq,
+.flecha-der {
   position: absolute;
   border: none;
   background: rgba(0, 0, 0, 0.3);
   font-size: 40px;
   height: 50%;
-  top: calc(50%);
+  /*top: calc(50%);*/
   line-height: 40px;
   width: 50px;
   color: #fff;
@@ -156,7 +145,8 @@ body {
   transition: 0.2s ease all;
 }
 
-.flecha-izq:hover, .flecha-der:hover {
+.flecha-izq:hover,
+.flecha-der:hover {
   background: rgba(0, 0, 0, 0.9);
 }
 
@@ -176,7 +166,7 @@ body {
 .contenedor-carousel {
   width: 100%;
   padding: 25px 0;
-  overflow: hidden;
+  overflow-x: scroll;
   scroll-behavior: smooth;
 }
 
@@ -186,7 +176,7 @@ body {
 }
 
 .pelicula {
-  width: 20%;
+  min-width: 20%;
   transition: 0.3s ease all;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -194,6 +184,42 @@ body {
 .pelicula img {
   width: 100%;
   vertical-align: top;
+}
+
+.pelicula.hover {
+  transform-origin: center;
+  transform: scale(1.2);
+}
+
+/*mediaQ de portada*/
+@media only screen and (max-width: 578px) {
+  .portada {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/portada1.jpg);
+    background-position: 80% 20%;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+  }
+}
+/*fin de mQ de portada*/
+@media only screen and (max-width: 800px) {
+  .contenedor-carousel {
+    overflow: visible;
+  }
+
+  .carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .indicadores, .flecha-der, .flecha-izq {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
