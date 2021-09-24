@@ -113,7 +113,6 @@ body {
 }
 
 .peliculas-recomendadas {
-  display: none;
   margin-bottom: 70px;
 }
 
@@ -127,6 +126,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: end;
+}
+
+.indicadores button {
+  background: #fff;
+  height: 3px;
+  width: 10px;
+  cursor: pointer;
+  border: none;
+  margin-right: 2px;
+}
+
+.indicadores button:hover, .indicadores button.activo {
+  background-color: red;
 }
 
 .flecha-izq, .flecha-der {
@@ -154,6 +166,34 @@ body {
 
 .flecha-der {
   right: 0;
+}
+
+.titulo-carousel {
+  font-size: 30px;
+  color: #fff;
+}
+
+.contenedor-carousel {
+  width: 100%;
+  padding: 25px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.pelicula {
+  width: 20%;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pelicula img {
+  width: 100%;
+  vertical-align: top;
 }
 
 /*# sourceMappingURL=style.css.map */
