@@ -1,11 +1,12 @@
 @import 'body';
+@import '../scss/base/variables';
 
 .img-nav {
     display: flex;
     align-items: center;
     .logotipo {
         font-family: 'Bebas Neue', cursive;
-        color: var(--rojo) ;
+        color: $colorRojo ;
         font-weight: normal;
         font-size: 50px;
     }

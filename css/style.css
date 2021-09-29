@@ -4,13 +4,8 @@
   box-sizing: border-box;
 }
 
-:root {
-  --rojo: #E50914;
-  --fondo: #141414;
-}
-
 body {
-  background: var(--fondo);
+  background: #141414;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -20,13 +15,8 @@ body {
   box-sizing: border-box;
 }
 
-:root {
-  --rojo: #E50914;
-  --fondo: #141414;
-}
-
 body {
-  background: var(--fondo);
+  background: #141414;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -36,7 +26,7 @@ body {
 }
 .img-nav .logotipo {
   font-family: "Bebas Neue", cursive;
-  color: var(--rojo);
+  color: #E50914;
   font-weight: normal;
   font-size: 50px;
 }

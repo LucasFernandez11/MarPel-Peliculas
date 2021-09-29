@@ -1,14 +1,14 @@
+@import '../scss/base/variables';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-    
-    --rojo: #E50914;
-    --fondo: #141414;
-}
+
+
+
 body {
-    background: var(--fondo);
+    background: $colorFondo;
     font-family: 'Open Sans', sans-serif;
 }
