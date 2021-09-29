@@ -24,7 +24,8 @@ body {
   display: flex;
   align-items: center;
 }
-.img-nav .logotipo {
+
+.logotipo {
   font-family: "Bebas Neue", cursive;
   color: #E50914;
   font-weight: normal;

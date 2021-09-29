@@ -21,122 +21,143 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent mx-auto">
-            <div class="container ">
-                <div class="navbar-brand img-nav">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-transparent" aria-label="Third navbar example">
+            <div class="container-fluid">
+                <div class="mt-3">
                     <h2 class="logotipo "> MarPel</h2>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
-                    aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarDark">
-                    <ul class="navbar-nav mx-auto ">
-                        <li class="nav-item mx-4 "><a class="nav-link active" href="">Inicio</a></li>
-                        <li class="nav-item mx-4 "><a class="nav-link " href="">Peliculas</a></li>
-                        <li class="nav-item mx-4 "><a class="nav-link " href="">Estrenos</a></li>
-                        <li class="nav-item mx-4 "><a class="nav-link " href="">Nosotros</a></li>
+
+                <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav mx-auto mb-2 mb-sm-0">
+                        <li class="nav-item mx-lg-5 mx-md-3 mx-sm-1">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-lg-5 mx-md-3 mx-sm-1">
+                            <a class="nav-link" href="#">Principales</a>
+                        </li>
+                        <li class="nav-item mx-lg-5 mx-md-3 mx-sm-1">
+                            <a class="nav-link" href="#">Especiales</a>
+                        </li>
+
+                        <li class="nav-item mx-lg-5 mx-md-3 mx-sm-1 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+                                aria-expanded="false">Fases</a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="dropdown03">
+                                <li><a class="dropdown-item nav-link bg-dark" href="#">Fase 1</a></li>
+                                <li><a class="dropdown-item nav-link bg-dark" href="#">Fase 2</a></li>
+                                <li><a class="dropdown-item nav-link bg-dark" href="#">Fase 3 y 4</a></li>
+                            </ul>
+                        </li>
                     </ul>
+                    <form>
+                        <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="mt-1" >        
-            <section class="portada">
-                <div class="contenedor">
-                    <h3 class="titulo-portada">Shang Chi</h3>
-                    <p class="descripcion">Shang-Chi debe enfrentarse al pasado que pensó que había dejado atrás cuando se ve atraído por la red
-                        de la misteriosa organización de los Diez Anillos.</p>
-                    <button class="boton" role="button"><i class="fas fa-info-circle me-3"></i>ver descripcion</button>                   
-                </div>
-            </section>
+    <main>
+        <section class="portada">
+            <div class="contenedor">
+                <h3 class="titulo-portada">Shang Chi</h3>
+                <p class="descripcion">Shang-Chi debe enfrentarse al pasado que pensó que había dejado atrás cuando se
+                    ve atraído por la red
+                    de la misteriosa organización de los Diez Anillos.</p>
+                <button class="boton" role="button"><i class="fas fa-info-circle me-3"></i>ver descripcion</button>
+            </div>
+        </section>
 
-            <section class="contenedor peliculas-recomendadas">
-                <div class="contenedor-titulo-controles">
-                    <h3 class="titulo-carousel">Recomendaciones</h3>
-                    <div class="indicadores"></div>
-                </div> 
-                <div class="contenedor-principal">
-                    <button role="button" id="flecha-izq" class="flecha-izq"><i class="fas fa-angle-left"></i></button>
+        <section class="contenedor peliculas-recomendadas">
+            <div class="contenedor-titulo-controles">
+                <h3 class="titulo-carousel">Recomendaciones</h3>
+                <div class="indicadores"></div>
+            </div>
+            <div class="contenedor-principal">
+                <button role="button" id="flecha-izq" class="flecha-izq"><i class="fas fa-angle-left"></i></button>
 
-                    <div class="contenedor-carousel">
-                        <div class="carousel">
-                            <div class="pelicula">
-                                <a href="#"><img src="images/blackwidow.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/blackpanther.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/capitanamarvel.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/endgame.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/guardianes2.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/spiderman2.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/thorragnarok.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/blackwidow.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/blackpanther.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/capitanamarvel.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/endgame.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/guardianes2.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/spiderman2.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/thorragnarok.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/blackwidow.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/blackpanther.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/capitanamarvel.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/endgame.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/guardianes2.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/spiderman2.jpg" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="images/thorragnarok.jpg" alt=""></a>
-                            </div>
-
+                <div class="contenedor-carousel">
+                    <div class="carousel">
+                        <div class="pelicula">
+                            <a href="#"><img src="images/blackwidow.jpg" alt=""></a>
                         </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/blackpanther.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/capitanamarvel.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/endgame.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/guardianes2.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/spiderman2.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/thorragnarok.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/blackwidow.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/blackpanther.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/capitanamarvel.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/endgame.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/guardianes2.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/spiderman2.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/thorragnarok.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/blackwidow.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/blackpanther.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/capitanamarvel.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/endgame.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/guardianes2.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/spiderman2.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="images/thorragnarok.jpg" alt=""></a>
+                        </div>
+
                     </div>
-
-
-                    <button role="button" id="flecha-der" class="flecha-der"><i class="fas fa-angle-right"></i></button>
-                   
                 </div>
 
 
-            </section>
-        
+                <button role="button" id="flecha-der" class="flecha-der"><i class="fas fa-angle-right"></i></button>
+
+            </div>
+
+
+        </section>
+
     </main>
 
 
